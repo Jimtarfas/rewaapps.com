@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "rewaapps",
+      "runtimeExecutable": "/Users/nouhe/.nvm/versions/node/v22.14.0/bin/npm",
+      "runtimeArgs": ["run", "dev"],
+      "port": 3000,
+      "autoPort": true
+    }
+  ]
+}
