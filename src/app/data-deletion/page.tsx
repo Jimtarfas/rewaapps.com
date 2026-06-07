@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Data Deletion",
   description:
-    "Request deletion of your personal data from Rewa App. Learn how to submit a data deletion request and what to expect.",
+    "Request deletion of your personal data from Rewa App. Step-by-step instructions for deleting your data, including data received from Meta platforms (Facebook, Instagram, WhatsApp).",
 };
 
 export default function DataDeletionPage() {
@@ -13,11 +13,10 @@ export default function DataDeletionPage() {
       <section className="bg-gradient-to-br from-secondary via-slate-800 to-secondary py-12 lg:py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl lg:text-4xl font-bold text-white">
-            Data Deletion Request
+            Data Deletion Instructions
           </h1>
           <p className="mt-2 text-slate-300">
-            Your data, your control. Learn how to request deletion of your
-            personal information.
+            How to request deletion of your personal data from Rewa App.
           </p>
         </div>
       </section>
@@ -29,141 +28,132 @@ export default function DataDeletionPage() {
             {/* Overview */}
             <div>
               <h2 className="text-2xl font-bold text-secondary">
-                Your Right to Data Deletion
+                Your Right to Delete Your Data
               </h2>
               <p className="mt-4 text-muted leading-relaxed">
-                At Rewa App, we respect your right to control your personal
-                data. In accordance with applicable data protection laws
-                (including GDPR, CCPA, and other regional regulations), you have
-                the right to request the deletion of your personal information
-                from our systems.
+                Rewa App respects your right to control your personal data. You
+                may request deletion of all personal information we hold about
+                you at any time. This includes data you provided directly, data
+                collected automatically, and any data received from third-party
+                platforms including Meta (Facebook, Instagram, WhatsApp).
               </p>
               <p className="mt-3 text-muted leading-relaxed">
-                If you have used any of our services or applications, including
-                those that integrate with Meta platforms (WhatsApp Business API)
-                or Twilio, you can request that we delete your personal data by
-                following the instructions below.
+                This right applies to all users who can access our application,
+                regardless of your location or jurisdiction.
               </p>
             </div>
 
-            {/* How to Request */}
+            {/* How to Request — Email */}
             <div>
               <h2 className="text-2xl font-bold text-secondary">
-                How to Submit a Data Deletion Request
+                How to Request Data Deletion
               </h2>
-              <p className="mt-4 text-muted leading-relaxed">
-                You can request deletion of your data using any of the following
-                methods:
-              </p>
 
-              <div className="mt-6 grid sm:grid-cols-2 gap-6">
-                {/* Email */}
+              <div className="mt-6 space-y-6">
+                {/* Method 1 */}
                 <div className="bg-card rounded-xl p-6 border border-border">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-4">
-                    <svg
-                      className="w-6 h-6"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={1.5}
-                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                      />
-                    </svg>
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-primary font-bold text-sm">1</span>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-secondary">
+                        Email Us (Recommended)
+                      </h3>
+                      <p className="mt-2 text-sm text-muted">
+                        Send an email to{" "}
+                        <a
+                          href="mailto:privacy@rewaapps.com?subject=Data%20Deletion%20Request"
+                          className="text-primary hover:text-primary-dark font-semibold"
+                        >
+                          privacy@rewaapps.com
+                        </a>{" "}
+                        with the subject line <strong>&quot;Data Deletion
+                        Request&quot;</strong> and include the following
+                        information:
+                      </p>
+                      <ul className="mt-3 space-y-2 text-sm text-muted">
+                        <li className="flex items-start gap-2">
+                          <span className="text-primary mt-0.5">&#8226;</span>
+                          Your full name
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-primary mt-0.5">&#8226;</span>
+                          The email address associated with your account
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-primary mt-0.5">&#8226;</span>
+                          Your company name (if applicable)
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-primary mt-0.5">&#8226;</span>
+                          Any account identifiers (user ID, phone number)
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-primary mt-0.5">&#8226;</span>
+                          Whether your request relates to data from a Meta
+                          platform (Facebook, Instagram, or WhatsApp)
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                  <h3 className="text-lg font-semibold text-secondary">
-                    Via Email
-                  </h3>
-                  <p className="mt-2 text-sm text-muted">
-                    Send an email to our privacy team with the subject line
-                    &quot;Data Deletion Request&quot;:
-                  </p>
-                  <a
-                    href="mailto:privacy@rewaapps.com?subject=Data%20Deletion%20Request"
-                    className="inline-block mt-3 text-primary hover:text-primary-dark font-semibold text-sm"
-                  >
-                    privacy@rewaapps.com
-                  </a>
                 </div>
 
-                {/* Written Request */}
+                {/* Method 2 */}
                 <div className="bg-card rounded-xl p-6 border border-border">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-4">
-                    <svg
-                      className="w-6 h-6"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={1.5}
-                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                      />
-                    </svg>
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-primary font-bold text-sm">2</span>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-secondary">
+                        Call Us
+                      </h3>
+                      <p className="mt-2 text-sm text-muted">
+                        Call{" "}
+                        <a
+                          href="tel:+17742787300"
+                          className="text-primary hover:text-primary-dark font-semibold"
+                        >
+                          +1 (774) 278-7300
+                        </a>{" "}
+                        during business hours (Mon–Fri, 9 AM – 6 PM MT) and
+                        request data deletion. We will guide you through the
+                        process.
+                      </p>
+                    </div>
                   </div>
-                  <h3 className="text-lg font-semibold text-secondary">
-                    Via Mail
-                  </h3>
-                  <p className="mt-2 text-sm text-muted">
-                    Send a written request to our office:
-                  </p>
-                  <p className="mt-3 text-sm text-muted">
-                    Rewa App — Privacy Team
-                    <br />
-                    412 W 7th St
-                    <br />
-                    Clovis, NM 88101, USA
-                  </p>
+                </div>
+
+                {/* Method 3 */}
+                <div className="bg-card rounded-xl p-6 border border-border">
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-primary font-bold text-sm">3</span>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-secondary">
+                        Send a Written Request
+                      </h3>
+                      <p className="mt-2 text-sm text-muted">
+                        Mail a written request to:
+                      </p>
+                      <p className="mt-2 text-sm text-muted">
+                        Rewa App — Privacy Team<br />
+                        412 W 7th St<br />
+                        Clovis, NM 88101<br />
+                        United States of America
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* What to Include */}
+            {/* What Happens Next */}
             <div>
               <h2 className="text-2xl font-bold text-secondary">
-                What to Include in Your Request
-              </h2>
-              <p className="mt-4 text-muted leading-relaxed">
-                To process your data deletion request efficiently, please include
-                the following information:
-              </p>
-              <ul className="mt-4 space-y-3">
-                {[
-                  "Your full name and email address associated with your account",
-                  "The name of your company or organization (if applicable)",
-                  "A description of the specific data you wish to have deleted",
-                  "Any account identifiers (e.g., user ID, phone number used with our services)",
-                  "If your request relates to data processed through a Meta platform or Twilio integration, please specify the platform (WhatsApp, Facebook, etc.)",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <svg
-                      className="w-5 h-5 text-primary flex-shrink-0 mt-0.5"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                    <span className="text-muted text-sm">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* What to Expect */}
-            <div>
-              <h2 className="text-2xl font-bold text-secondary">
-                What to Expect After Your Request
+                What Happens After You Submit a Request
               </h2>
               <div className="mt-6 space-y-4">
                 {[
@@ -171,28 +161,28 @@ export default function DataDeletionPage() {
                     step: "1",
                     title: "Acknowledgment",
                     description:
-                      "We will acknowledge receipt of your request within 2 business days via the contact method you provided.",
+                      "We will acknowledge receipt of your deletion request within 2 business days and provide you with a unique confirmation code to track your request.",
                     timeframe: "Within 2 business days",
                   },
                   {
                     step: "2",
-                    title: "Verification",
+                    title: "Identity Verification",
                     description:
-                      "We may need to verify your identity to ensure the security of your data. We may contact you for additional information.",
-                    timeframe: "1-5 business days",
+                      "To protect your security, we may ask you to verify your identity before processing the deletion. This may involve confirming your email address or answering security questions.",
+                    timeframe: "1–5 business days",
                   },
                   {
                     step: "3",
-                    title: "Processing",
+                    title: "Data Deletion",
                     description:
-                      "Once verified, we will process your deletion request and remove your personal data from our active systems.",
+                      "Once verified, we will delete all personal data associated with your account from our active systems, including any data received from Meta platforms or other third-party integrations.",
                     timeframe: "Up to 30 days",
                   },
                   {
                     step: "4",
                     title: "Confirmation",
                     description:
-                      "You will receive a confirmation once your data has been deleted. Some data may be retained as required by law.",
+                      "You will receive a written confirmation that your data has been deleted, along with your confirmation code for your records. You can use this code to verify the status of your request at any time by contacting us.",
                     timeframe: "Upon completion",
                   },
                 ].map((item) => (
@@ -223,6 +213,51 @@ export default function DataDeletionPage() {
               </div>
             </div>
 
+            {/* Meta Platform Users */}
+            <div>
+              <h2 className="text-2xl font-bold text-secondary">
+                For Users Who Connected via Facebook, Instagram, or WhatsApp
+              </h2>
+              <p className="mt-4 text-muted leading-relaxed">
+                If you connected to our application using Facebook Login or
+                accessed our services through a Meta platform (Facebook,
+                Instagram, WhatsApp), you have additional options:
+              </p>
+              <div className="mt-4 bg-card rounded-xl p-6 border border-border space-y-4">
+                <div>
+                  <h3 className="font-semibold text-secondary">
+                    Option A: Remove Our App from Your Meta Account
+                  </h3>
+                  <p className="mt-1 text-sm text-muted">
+                    Go to your Facebook Settings &gt; Apps and Websites &gt;
+                    find &quot;Rewa App&quot; &gt; click &quot;Remove.&quot;
+                    This will revoke our access to your Meta data. We will then
+                    automatically delete all Meta Platform Data associated with
+                    your account within 30 days.
+                  </p>
+                </div>
+                <hr className="border-border" />
+                <div>
+                  <h3 className="font-semibold text-secondary">
+                    Option B: Contact Us Directly
+                  </h3>
+                  <p className="mt-1 text-sm text-muted">
+                    Email{" "}
+                    <a
+                      href="mailto:privacy@rewaapps.com?subject=Meta%20Data%20Deletion%20Request"
+                      className="text-primary hover:text-primary-dark font-medium"
+                    >
+                      privacy@rewaapps.com
+                    </a>{" "}
+                    and specify that your request relates to data received from a
+                    Meta platform. We will delete all associated data and provide
+                    you with a confirmation code and a status URL where you can
+                    verify the deletion.
+                  </p>
+                </div>
+              </div>
+            </div>
+
             {/* Important Notes */}
             <div>
               <h2 className="text-2xl font-bold text-secondary">
@@ -249,22 +284,24 @@ export default function DataDeletionPage() {
                     </h3>
                     <ul className="mt-2 space-y-2 text-sm text-amber-700">
                       <li>
-                        We may retain certain information as required by law or
-                        for legitimate business purposes (e.g., fraud prevention,
-                        legal compliance, tax records).
+                        Certain data may be retained if required by law (e.g.,
+                        tax records, fraud prevention, legal compliance). If any
+                        data is retained, we will inform you of the specific data
+                        and the legal justification for its retention.
                       </li>
                       <li>
-                        Data that has been shared with third-party platforms
-                        (e.g., Meta, Twilio) will be subject to the data deletion
-                        policies of those platforms.
+                        Deleting your data will result in the permanent
+                        termination of your account and loss of access to our
+                        services. This action cannot be undone.
                       </li>
                       <li>
-                        Deleting your data may result in the termination of your
-                        account and loss of access to our services.
+                        Anonymized or aggregated data that cannot identify you
+                        may be retained for analytical purposes.
                       </li>
                       <li>
-                        Anonymized or aggregated data that cannot be used to
-                        identify you may be retained for analytical purposes.
+                        Data shared with third-party platforms (e.g., Meta,
+                        Twilio) is also subject to those platforms&apos; own data
+                        deletion policies.
                       </li>
                     </ul>
                   </div>
@@ -272,61 +309,47 @@ export default function DataDeletionPage() {
               </div>
             </div>
 
-            {/* For Meta/Twilio Users */}
-            <div>
-              <h2 className="text-2xl font-bold text-secondary">
-                For Users of Meta and Twilio Integrations
-              </h2>
-              <p className="mt-4 text-muted leading-relaxed">
-                If you have interacted with our services through Meta platforms
-                (WhatsApp Business API) or Twilio, you can also manage your data
-                directly through your respective account settings on those
-                platforms. Additionally, you can contact us to request deletion
-                of any data we have collected through these integrations.
-              </p>
-              <p className="mt-3 text-muted leading-relaxed">
-                When you request data deletion related to platform integrations,
-                we will:
-              </p>
-              <ul className="mt-3 list-disc pl-6 text-muted space-y-1">
-                <li>
-                  Delete all personal data collected through the integration from
-                  our systems
-                </li>
-                <li>
-                  Provide you with a confirmation code and status URL to track
-                  the progress of your deletion request
-                </li>
-                <li>
-                  Notify the relevant platform (Meta, Twilio) of the deletion as
-                  required by their policies
-                </li>
-              </ul>
-            </div>
-
             {/* Contact */}
             <div>
               <h2 className="text-2xl font-bold text-secondary">
-                Questions?
+                Questions About Data Deletion?
               </h2>
               <p className="mt-4 text-muted leading-relaxed">
-                If you have any questions about data deletion or your privacy
-                rights, please don&apos;t hesitate to contact our privacy team at{" "}
-                <a
-                  href="mailto:privacy@rewaapps.com"
-                  className="text-primary hover:text-primary-dark font-medium"
-                >
-                  privacy@rewaapps.com
-                </a>{" "}
-                or visit our{" "}
-                <a
-                  href="/privacy-policy"
-                  className="text-primary hover:text-primary-dark font-medium"
-                >
-                  Privacy Policy
-                </a>{" "}
-                for more information about how we handle your data.
+                If you have questions about the deletion process, the status of
+                a pending request, or your privacy rights in general, contact
+                our privacy team:
               </p>
+              <div className="mt-4 bg-card rounded-xl p-6 border border-border">
+                <div className="space-y-1 text-sm text-muted">
+                  <p>
+                    <strong className="text-secondary">Email:</strong>{" "}
+                    <a
+                      href="mailto:privacy@rewaapps.com"
+                      className="text-primary hover:text-primary-dark"
+                    >
+                      privacy@rewaapps.com
+                    </a>
+                  </p>
+                  <p>
+                    <strong className="text-secondary">Phone:</strong>{" "}
+                    <a
+                      href="tel:+17742787300"
+                      className="text-primary hover:text-primary-dark"
+                    >
+                      +1 (774) 278-7300
+                    </a>
+                  </p>
+                  <p>
+                    <strong className="text-secondary">Privacy Policy:</strong>{" "}
+                    <a
+                      href="/privacy-policy"
+                      className="text-primary hover:text-primary-dark"
+                    >
+                      rewaapps.com/privacy-policy
+                    </a>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
