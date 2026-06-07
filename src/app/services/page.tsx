@@ -4,25 +4,69 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Explore Rewa App services: WhatsApp Business API integration via Twilio, embedded signup, messaging automation, CRM integration, and custom software development.",
+    "Rewa App services: web development, mobile app development, UI/UX design, API integration, business messaging, CRM solutions, and custom software development.",
 };
 
 const services = [
   {
-    id: "whatsapp-api",
-    title: "WhatsApp Business API Integration",
-    subtitle: "Connect with over 2 billion users on the world's most popular messaging platform",
+    id: "development",
+    title: "Web & Mobile App Development",
+    subtitle: "Custom applications built with modern technology",
     description:
-      "We provide full WhatsApp Business API integration powered by Twilio. From embedded signup and phone number provisioning to message sending and receiving, our platform handles the complete lifecycle so your business can focus on engaging customers.",
+      "We design and develop web applications, progressive web apps, and native mobile apps for iOS and Android. Whether you need a customer-facing product, an internal dashboard, or a complex SaaS platform, we build solutions that are fast, reliable, and easy to maintain.",
     features: [
-      "Twilio-powered WhatsApp Business API access",
-      "Embedded signup for fast business onboarding",
-      "Phone number registration and verification",
-      "Business profile setup and management",
-      "Two-way messaging with rich media support",
-      "Webhook-based message delivery and status callbacks",
-      "Multi-number and multi-agent support",
-      "Full compliance with WhatsApp Commerce and Business policies",
+      "React, Next.js, and Vue.js web applications",
+      "Native iOS (Swift) and Android (Kotlin) development",
+      "Cross-platform mobile apps with React Native",
+      "Progressive web apps (PWA)",
+      "E-commerce platforms and marketplaces",
+      "Admin dashboards and internal tools",
+      "Real-time features (chat, notifications, live updates)",
+      "Performance optimization and accessibility compliance",
+    ],
+    icon: (
+      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+      </svg>
+    ),
+  },
+  {
+    id: "design",
+    title: "UI/UX Design & Branding",
+    subtitle: "User-centered design that drives results",
+    description:
+      "Great software starts with great design. We create intuitive user experiences, beautiful interfaces, and cohesive brand identities. Every design decision is informed by user research, business goals, and industry best practices.",
+    features: [
+      "User research and persona development",
+      "Wireframing and interactive prototyping",
+      "Visual design and design systems",
+      "Brand identity and style guides",
+      "Usability testing and iteration",
+      "Responsive and mobile-first design",
+      "Design handoff with developer-ready specs",
+      "Ongoing design support and iteration",
+    ],
+    icon: (
+      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+      </svg>
+    ),
+  },
+  {
+    id: "messaging",
+    title: "Business Messaging & Communication Platforms",
+    subtitle: "Help your clients reach customers on the channels they use",
+    description:
+      "We build messaging solutions that connect businesses with their customers across WhatsApp, SMS, email, and in-app channels. From API integrations with providers like Twilio to full-featured communication platforms, we help you create seamless, automated messaging experiences.",
+    features: [
+      "WhatsApp Business API integration and management",
+      "SMS and multi-channel messaging systems",
+      "Chatbot and conversational AI development",
+      "Message template management and automation",
+      "Customer onboarding and embedded signup flows",
+      "Notification and alert delivery systems",
+      "Analytics dashboards and delivery reporting",
+      "Compliance with messaging platform policies",
     ],
     icon: (
       <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -31,42 +75,20 @@ const services = [
     ),
   },
   {
-    id: "messaging",
-    title: "Messaging Automation & Template Management",
-    subtitle: "Automate conversations and manage message templates at scale",
-    description:
-      "Create, submit, and manage WhatsApp message templates directly from our platform. Build automated messaging workflows for notifications, reminders, promotions, and customer support — all with delivery tracking and analytics.",
-    features: [
-      "Message template creation, editing, and submission",
-      "Template approval status tracking",
-      "Automated notification and alert delivery",
-      "Scheduled and triggered messaging campaigns",
-      "Conversational chatbot and auto-reply flows",
-      "Rich media messages (images, documents, buttons, lists)",
-      "Delivery receipts and read status tracking",
-      "Campaign analytics and performance reporting",
-    ],
-    icon: (
-      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-      </svg>
-    ),
-  },
-  {
     id: "crm",
-    title: "CRM & Business Tool Integration",
-    subtitle: "Unify your customer data and communication channels",
+    title: "API Integration & CRM Solutions",
+    subtitle: "Connect your tools and automate your workflows",
     description:
-      "Seamlessly connect WhatsApp and other messaging channels with your existing CRM, helpdesk, and business applications. Our API-first architecture makes it easy to build custom integrations that centralize customer data and automate cross-platform workflows.",
+      "We integrate your business systems — CRMs, ERPs, payment gateways, messaging APIs, and third-party services — into unified workflows. Whether you need a custom integration or a full CRM implementation, we make your tech stack work together.",
     features: [
-      "Salesforce, HubSpot, and Zoho CRM connectors",
-      "Custom API and webhook integration development",
-      "Contact synchronization across platforms",
-      "Automated lead capture from WhatsApp conversations",
-      "Conversation history logging and search",
-      "Workflow triggers based on message events",
-      "Custom dashboards and reporting",
-      "Helpdesk and ticketing system integration",
+      "Salesforce, HubSpot, and Zoho CRM implementation",
+      "Custom API development (REST and GraphQL)",
+      "Third-party API integration (Twilio, Stripe, SendGrid, etc.)",
+      "Webhook-based event processing",
+      "Data synchronization across platforms",
+      "Workflow automation and business logic",
+      "ETL pipelines and data migration",
+      "Custom reporting and analytics dashboards",
     ],
     icon: (
       <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -75,24 +97,24 @@ const services = [
     ),
   },
   {
-    id: "development",
-    title: "Custom Software Development",
-    subtitle: "Tailored solutions built for your unique business needs",
+    id: "cloud",
+    title: "Cloud Infrastructure & DevOps",
+    subtitle: "Reliable, scalable, and secure hosting for your applications",
     description:
-      "From web applications to mobile platforms, we design and develop custom software that extends and enhances your messaging capabilities. Our team builds solutions that integrate natively with WhatsApp, Twilio, and your existing technology stack.",
+      "We set up and manage cloud infrastructure so your applications run smoothly at any scale. From initial architecture to CI/CD pipelines, monitoring, and security hardening — we handle the ops so you can focus on your business.",
     features: [
-      "Full-stack web application development",
-      "Mobile app development (iOS and Android)",
-      "REST and GraphQL API design and development",
-      "Cloud infrastructure setup and management",
-      "WhatsApp and Twilio API custom implementations",
-      "Multi-tenant SaaS platform development",
-      "Ongoing maintenance, monitoring, and support",
-      "Performance optimization and scaling",
+      "AWS, Google Cloud, and Azure setup and management",
+      "Docker and Kubernetes containerization",
+      "CI/CD pipeline configuration",
+      "Database design, optimization, and management",
+      "Application monitoring and alerting",
+      "Security audits and hardening",
+      "Auto-scaling and load balancing",
+      "Disaster recovery and backup strategies",
     ],
     icon: (
       <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
       </svg>
     ),
   },
@@ -101,27 +123,27 @@ const services = [
 const process = [
   {
     step: "01",
-    title: "Discovery",
+    title: "Discover",
     description:
-      "We start by understanding your business goals, customer communication needs, and existing technology stack through in-depth consultations.",
+      "We start with your goals. Through workshops and interviews, we define scope, priorities, and success metrics.",
   },
   {
     step: "02",
-    title: "Architecture",
+    title: "Design",
     description:
-      "Our team designs a tailored solution — selecting the right APIs, integrations, and messaging workflows to match your requirements.",
+      "Wireframes, prototypes, and visual designs — reviewed and refined with your input before we write code.",
   },
   {
     step: "03",
-    title: "Implementation",
+    title: "Build",
     description:
-      "We build and integrate your solution iteratively, with regular demos and feedback cycles to keep you involved at every stage.",
+      "Agile sprints with weekly demos. You see real progress every week and can adjust direction anytime.",
   },
   {
     step: "04",
-    title: "Launch & Support",
+    title: "Launch & Grow",
     description:
-      "We handle deployment, onboarding, and provide ongoing technical support, monitoring, and optimization to ensure long-term success.",
+      "We deploy, monitor, and iterate. Post-launch support ensures your product keeps improving.",
   },
 ];
 
@@ -136,9 +158,9 @@ export default function ServicesPage() {
               Our Services
             </h1>
             <p className="mt-4 text-lg text-slate-300 leading-relaxed">
-              End-to-end WhatsApp Business API solutions and custom
-              development services to help your business communicate, automate,
-              and grow — all powered by Twilio&apos;s reliable infrastructure.
+              Full-service software development, design, and integration.
+              We build digital products and platforms that help businesses
+              grow — from first prototype to production scale.
             </p>
           </div>
         </div>
@@ -171,7 +193,7 @@ export default function ServicesPage() {
                     href="/contact"
                     className="inline-flex items-center gap-2 mt-6 bg-primary hover:bg-primary-dark text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition-colors"
                   >
-                    Get Started
+                    Discuss This Service
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
@@ -215,11 +237,11 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-secondary">
-              How We Work
+              Our Process
             </h2>
             <p className="mt-4 text-lg text-muted">
-              A proven process that delivers results, from initial consultation
-              to production launch and beyond.
+              A proven workflow that keeps projects on track and clients
+              informed at every step.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -245,17 +267,17 @@ export default function ServicesPage() {
       <section className="bg-primary py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white">
-            Ready to Get Started?
+            Ready to Start Your Project?
           </h2>
           <p className="mt-4 text-lg text-blue-100">
-            Tell us about your business and we&apos;ll design the right
-            messaging solution for you.
+            Tell us what you&apos;re building and we&apos;ll put together a
+            proposal with timeline and pricing.
           </p>
           <Link
             href="/contact"
             className="inline-block mt-8 bg-white text-primary hover:bg-blue-50 px-8 py-3.5 rounded-lg text-base font-semibold transition-colors"
           >
-            Schedule a Free Consultation
+            Get a Free Consultation
           </Link>
         </div>
       </section>

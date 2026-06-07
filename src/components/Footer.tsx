@@ -7,10 +7,10 @@ const footerLinks = {
     { name: "Contact", href: "/contact" },
   ],
   solutions: [
-    { name: "WhatsApp Business API", href: "/services#whatsapp-api" },
+    { name: "Web & Mobile Development", href: "/services#development" },
+    { name: "UI/UX Design", href: "/services#design" },
     { name: "Business Messaging", href: "/services#messaging" },
-    { name: "CRM Integration", href: "/services#crm" },
-    { name: "Custom Development", href: "/services#development" },
+    { name: "API & CRM Integration", href: "/services#crm" },
   ],
   legal: [
     { name: "Privacy Policy", href: "/privacy-policy" },
@@ -36,8 +36,8 @@ export default function Footer() {
               <span className="text-xl font-bold">Rewa App</span>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed mb-4">
-              Technology solutions provider specializing in business messaging,
-              WhatsApp Business API integration, and custom software development.
+              Software development and design agency building web apps, mobile
+              apps, API integrations, and custom solutions for businesses worldwide.
             </p>
             {/* Business Contact Info - Required for Meta Verification */}
             <div className="text-sm text-slate-400 space-y-1">

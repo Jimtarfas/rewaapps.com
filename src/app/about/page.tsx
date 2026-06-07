@@ -4,14 +4,14 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about Rewa App — a technology solutions provider specializing in WhatsApp Business API integration, business messaging, and custom software development.",
+    "Learn about Rewa App — a software development and design agency building web apps, mobile apps, and custom technology solutions for businesses worldwide.",
 };
 
 const values = [
   {
-    title: "Innovation",
+    title: "Craftsmanship",
     description:
-      "We stay at the forefront of messaging technology, continuously evolving our platform to give our clients a competitive edge in customer communication.",
+      "We take pride in writing clean, maintainable code and designing interfaces that feel effortless. Quality is never an afterthought.",
     icon: (
       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
@@ -21,7 +21,7 @@ const values = [
   {
     title: "Reliability",
     description:
-      "Built on Twilio's enterprise infrastructure, our platform delivers 99.9% uptime so businesses can count on their messaging channels being available around the clock.",
+      "We hit deadlines, communicate proactively, and stand behind our work. When we commit to a project, we deliver.",
     icon: (
       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -31,7 +31,7 @@ const values = [
   {
     title: "Transparency",
     description:
-      "We believe in clear communication, straightforward pricing, and full visibility into platform performance. No hidden fees and no surprises.",
+      "No black boxes. You get shared project boards, weekly updates, and honest conversations about tradeoffs, timelines, and costs.",
     icon: (
       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -40,9 +40,9 @@ const values = [
     ),
   },
   {
-    title: "Client Success",
+    title: "Partnership",
     description:
-      "Your growth is our measure of success. We work as an extension of your team, providing dedicated support and strategic guidance at every step.",
+      "We work as an extension of your team, not a vendor. Your success is our success — and we measure ourselves by the results we create together.",
     icon: (
       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
@@ -54,23 +54,23 @@ const values = [
 const team = [
   {
     name: "James Carter",
-    role: "Chief Executive Officer",
-    bio: "Experienced technology leader with deep expertise in business communications and API-driven platforms. Drives the company vision and strategic partnerships.",
+    role: "Founder & CEO",
+    bio: "Entrepreneur and technologist with a background in software engineering and business strategy. Leads company vision and client relationships.",
   },
   {
     name: "Sarah Mitchell",
-    role: "Chief Technology Officer",
-    bio: "Expert in messaging API architecture and cloud infrastructure. Leads the engineering team in building scalable, reliable communication solutions.",
+    role: "Head of Engineering",
+    bio: "Full-stack architect with deep expertise in cloud infrastructure, API design, and scalable system architecture. Leads the development team.",
   },
   {
     name: "David Okafor",
-    role: "Head of Solutions",
-    bio: "Specializes in designing end-to-end messaging workflows and integration strategies for enterprise clients across multiple industries.",
+    role: "Lead Designer",
+    bio: "UI/UX designer passionate about creating beautiful, functional interfaces. Background in brand identity, product design, and user research.",
   },
   {
     name: "Priya Sharma",
-    role: "Head of Client Success",
-    bio: "Ensures every client achieves their messaging goals. Background in customer experience, onboarding optimization, and enterprise account management.",
+    role: "Project Manager",
+    bio: "Keeps projects on track and clients informed. Expert in agile methodology, cross-functional coordination, and delivery management.",
   },
 ];
 
@@ -85,10 +85,10 @@ export default function AboutPage() {
               About Rewa App
             </h1>
             <p className="mt-4 text-lg text-slate-300 leading-relaxed">
-              We are a technology solutions provider dedicated to helping
-              businesses communicate with their customers through WhatsApp and
-              other messaging channels, powered by Twilio&apos;s enterprise
-              infrastructure.
+              We are a software development and design agency that helps
+              businesses build, launch, and scale digital products. From
+              startups to established enterprises, we turn ideas into
+              technology that works.
             </p>
           </div>
         </div>
@@ -103,30 +103,28 @@ export default function AboutPage() {
                 Our Story
               </span>
               <h2 className="mt-2 text-3xl lg:text-4xl font-bold text-secondary">
-                Built for the Future of Business Communication
+                Small Team, Big Impact
               </h2>
               <div className="mt-6 space-y-4 text-muted leading-relaxed">
                 <p>
-                  Rewa App was founded with the conviction that every business —
-                  whether a local shop or a global enterprise — should be able
-                  to reach customers on the channels they already use every day.
-                  WhatsApp, with over two billion users worldwide, is at the
-                  heart of that mission.
+                  Rewa App started with a simple idea: businesses deserve a
+                  technology partner who actually cares about outcomes, not
+                  just deliverables. Too many agencies ship code and move on.
+                  We wanted to build something different — a team that stays
+                  invested in your success long after launch day.
                 </p>
                 <p>
-                  We built our platform on Twilio&apos;s trusted messaging
-                  infrastructure to provide businesses with a reliable,
-                  scalable, and compliant way to integrate the WhatsApp Business
-                  API. Our embedded signup flow makes onboarding fast and
-                  frictionless, while our template management and automation
-                  tools give businesses the power to communicate at scale.
+                  Today, our team of designers, engineers, and strategists has
+                  delivered over 200 projects across e-commerce, healthcare,
+                  fintech, logistics, and more. We build everything from
+                  customer-facing mobile apps to internal tools, API
+                  integrations, and messaging platforms.
                 </p>
                 <p>
-                  Today, Rewa App serves hundreds of businesses across
-                  e-commerce, healthcare, logistics, financial services, and
-                  more. We help our clients send millions of messages every
-                  month — from transactional notifications and appointment
-                  reminders to marketing campaigns and two-way customer support.
+                  Based in Clovis, New Mexico, we work with clients across the
+                  United States and internationally. Our size is our strength —
+                  you work directly with senior people who know your project
+                  inside and out.
                 </p>
               </div>
             </div>
@@ -137,10 +135,9 @@ export default function AboutPage() {
                     Our Mission
                   </h3>
                   <p className="mt-2 text-muted">
-                    To empower businesses of all sizes with the tools to
-                    communicate with customers effectively through WhatsApp and
-                    messaging channels — making onboarding simple, messaging
-                    reliable, and growth measurable.
+                    To help businesses of all sizes leverage technology to
+                    operate more efficiently, reach more customers, and grow
+                    sustainably — through thoughtful design and solid engineering.
                   </p>
                 </div>
                 <hr className="border-border" />
@@ -149,9 +146,9 @@ export default function AboutPage() {
                     Our Vision
                   </h3>
                   <p className="mt-2 text-muted">
-                    To be the most trusted platform for business messaging,
-                    recognized for technical excellence, operational reliability,
-                    and a relentless commitment to our clients&apos; success.
+                    To be the agency clients recommend by name — known for
+                    delivering exceptional work, on time, and being genuinely
+                    great to work with.
                   </p>
                 </div>
                 <hr className="border-border" />
@@ -177,11 +174,10 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-secondary">
-              Our Values
+              What We Stand For
             </h2>
             <p className="mt-4 text-lg text-muted">
-              The principles that guide everything we build and every
-              relationship we nurture.
+              The principles behind every project we take on.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -208,11 +204,10 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-secondary">
-              Leadership Team
+              Our Team
             </h2>
             <p className="mt-4 text-lg text-muted">
-              Experienced professionals building the future of business
-              messaging.
+              Senior professionals who lead your project from start to finish.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -248,11 +243,11 @@ export default function AboutPage() {
       <section className="bg-primary py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white">
-            Want to Work With Us?
+            Let&apos;s Build Something Together
           </h2>
           <p className="mt-4 text-lg text-blue-100">
-            We&apos;d love to hear about your business and explore how our
-            platform can help you grow.
+            Tell us about your project and we&apos;ll put together a plan
+            and estimate — no commitment required.
           </p>
           <Link
             href="/contact"
