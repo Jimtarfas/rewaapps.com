@@ -4,14 +4,14 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about Rewa Apps — a technology solutions agency specializing in business messaging, WhatsApp Business API, and custom software development.",
+    "Learn about Rewa App — a technology solutions provider specializing in WhatsApp Business API integration, business messaging, and custom software development.",
 };
 
 const values = [
   {
     title: "Innovation",
     description:
-      "We stay at the forefront of messaging technology, continuously evolving our solutions to give our clients a competitive edge.",
+      "We stay at the forefront of messaging technology, continuously evolving our platform to give our clients a competitive edge in customer communication.",
     icon: (
       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
@@ -21,7 +21,7 @@ const values = [
   {
     title: "Reliability",
     description:
-      "With 99.9% uptime and enterprise-grade infrastructure, our clients can count on us to keep their communications running 24/7.",
+      "Built on Twilio's enterprise infrastructure, our platform delivers 99.9% uptime so businesses can count on their messaging channels being available around the clock.",
     icon: (
       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -31,7 +31,7 @@ const values = [
   {
     title: "Transparency",
     description:
-      "We believe in clear communication, honest pricing, and full visibility into project progress. No hidden fees, no surprises.",
+      "We believe in clear communication, straightforward pricing, and full visibility into platform performance. No hidden fees and no surprises.",
     icon: (
       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -42,7 +42,7 @@ const values = [
   {
     title: "Client Success",
     description:
-      "Your growth is our measure of success. We work as an extension of your team, deeply invested in achieving your business goals.",
+      "Your growth is our measure of success. We work as an extension of your team, providing dedicated support and strategic guidance at every step.",
     icon: (
       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
@@ -55,22 +55,22 @@ const team = [
   {
     name: "James Carter",
     role: "Chief Executive Officer",
-    bio: "15+ years in enterprise technology and business development. Previously led digital transformation initiatives at major consulting firms.",
+    bio: "Experienced technology leader with deep expertise in business communications and API-driven platforms. Drives the company vision and strategic partnerships.",
   },
   {
     name: "Sarah Mitchell",
     role: "Chief Technology Officer",
-    bio: "Expert in API architecture and messaging systems. Former senior engineer at leading communication platforms.",
+    bio: "Expert in messaging API architecture and cloud infrastructure. Leads the engineering team in building scalable, reliable communication solutions.",
   },
   {
     name: "David Okafor",
     role: "Head of Solutions",
-    bio: "Specializes in designing scalable business communication strategies. Certified Meta Business Solutions expert.",
+    bio: "Specializes in designing end-to-end messaging workflows and integration strategies for enterprise clients across multiple industries.",
   },
   {
     name: "Priya Sharma",
     role: "Head of Client Success",
-    bio: "Ensures every client achieves their goals. Background in customer experience and enterprise account management.",
+    bio: "Ensures every client achieves their messaging goals. Background in customer experience, onboarding optimization, and enterprise account management.",
   },
 ];
 
@@ -82,12 +82,13 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-4xl lg:text-5xl font-bold text-white">
-              About Rewa Apps
+              About Rewa App
             </h1>
             <p className="mt-4 text-lg text-slate-300 leading-relaxed">
-              We are a technology solutions agency on a mission to transform how
-              businesses communicate with their customers through intelligent
-              messaging and seamless integrations.
+              We are a technology solutions provider dedicated to helping
+              businesses communicate with their customers through WhatsApp and
+              other messaging channels, powered by Twilio&apos;s enterprise
+              infrastructure.
             </p>
           </div>
         </div>
@@ -102,29 +103,30 @@ export default function AboutPage() {
                 Our Story
               </span>
               <h2 className="mt-2 text-3xl lg:text-4xl font-bold text-secondary">
-                Built by Engineers, Driven by Impact
+                Built for the Future of Business Communication
               </h2>
               <div className="mt-6 space-y-4 text-muted leading-relaxed">
                 <p>
-                  Rewa Apps was founded with a simple belief: every business
-                  deserves access to powerful communication tools, regardless of
-                  its size. What started as a small team of engineers passionate
-                  about messaging technology has grown into a full-service
-                  technology agency serving clients worldwide.
+                  Rewa App was founded with the conviction that every business —
+                  whether a local shop or a global enterprise — should be able
+                  to reach customers on the channels they already use every day.
+                  WhatsApp, with over two billion users worldwide, is at the
+                  heart of that mission.
                 </p>
                 <p>
-                  As an official Meta Tech Provider, we have the expertise and
-                  authorization to deliver enterprise-grade WhatsApp Business API
-                  solutions. We work directly with the Meta platform to ensure
-                  our clients get the most reliable, compliant, and feature-rich
-                  messaging capabilities available.
+                  We built our platform on Twilio&apos;s trusted messaging
+                  infrastructure to provide businesses with a reliable,
+                  scalable, and compliant way to integrate the WhatsApp Business
+                  API. Our embedded signup flow makes onboarding fast and
+                  frictionless, while our template management and automation
+                  tools give businesses the power to communicate at scale.
                 </p>
                 <p>
-                  Today, we serve over 500 businesses across multiple industries,
-                  helping them send over 50 million messages per month. Our
-                  clients range from fast-growing startups to established
-                  enterprises, all united by the need for effective, scalable
-                  customer communication.
+                  Today, Rewa App serves hundreds of businesses across
+                  e-commerce, healthcare, logistics, financial services, and
+                  more. We help our clients send millions of messages every
+                  month — from transactional notifications and appointment
+                  reminders to marketing campaigns and two-way customer support.
                 </p>
               </div>
             </div>
@@ -135,9 +137,10 @@ export default function AboutPage() {
                     Our Mission
                   </h3>
                   <p className="mt-2 text-muted">
-                    To empower businesses of all sizes with technology solutions
-                    that make customer communication smarter, faster, and more
-                    personal.
+                    To empower businesses of all sizes with the tools to
+                    communicate with customers effectively through WhatsApp and
+                    messaging channels — making onboarding simple, messaging
+                    reliable, and growth measurable.
                   </p>
                 </div>
                 <hr className="border-border" />
@@ -146,22 +149,22 @@ export default function AboutPage() {
                     Our Vision
                   </h3>
                   <p className="mt-2 text-muted">
-                    To be the most trusted technology partner for business
-                    messaging, known for innovation, reliability, and a
-                    relentless focus on client success.
+                    To be the most trusted platform for business messaging,
+                    recognized for technical excellence, operational reliability,
+                    and a relentless commitment to our clients&apos; success.
                   </p>
                 </div>
                 <hr className="border-border" />
                 <div>
                   <h3 className="text-lg font-semibold text-secondary">
-                    Legal Entity
+                    Company Information
                   </h3>
-                  <p className="mt-2 text-muted text-sm">
-                    Rewa Apps is a registered technology company. Our legal
-                    business name, address, and registration details are
-                    available upon request and are consistent with all official
-                    filings and business documentation.
-                  </p>
+                  <div className="mt-2 text-sm text-muted space-y-1">
+                    <p><span className="font-medium text-secondary">Legal Name:</span> Rewa App</p>
+                    <p><span className="font-medium text-secondary">Address:</span> 412 W 7th St, Clovis, NM 88101, USA</p>
+                    <p><span className="font-medium text-secondary">Phone:</span> +1 (774) 278-7300</p>
+                    <p><span className="font-medium text-secondary">Website:</span> rewaapps.com</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -177,7 +180,8 @@ export default function AboutPage() {
               Our Values
             </h2>
             <p className="mt-4 text-lg text-muted">
-              The principles that guide everything we do.
+              The principles that guide everything we build and every
+              relationship we nurture.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -207,8 +211,8 @@ export default function AboutPage() {
               Leadership Team
             </h2>
             <p className="mt-4 text-lg text-muted">
-              Experienced professionals committed to delivering exceptional
-              technology solutions.
+              Experienced professionals building the future of business
+              messaging.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -247,7 +251,8 @@ export default function AboutPage() {
             Want to Work With Us?
           </h2>
           <p className="mt-4 text-lg text-blue-100">
-            We&apos;d love to hear about your project and explore how we can help.
+            We&apos;d love to hear about your business and explore how our
+            platform can help you grow.
           </p>
           <Link
             href="/contact"

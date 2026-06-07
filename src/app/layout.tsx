@@ -11,13 +11,13 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Rewa Apps — Business Messaging & Technology Solutions",
-    template: "%s | Rewa Apps",
+    default: "Rewa App — Business Messaging & Technology Solutions",
+    template: "%s | Rewa App",
   },
   description:
-    "Rewa Apps is a technology solutions agency specializing in business messaging, WhatsApp Business API integration, CRM solutions, and custom software development. Official Meta Tech Provider.",
+    "Rewa App is a technology solutions agency specializing in business messaging, WhatsApp Business API integration, CRM solutions, and custom software development. Official Meta Tech Provider.",
   keywords: [
-    "Rewa Apps",
+    "Rewa App",
     "WhatsApp Business API",
     "business messaging",
     "Meta Tech Provider",
@@ -26,17 +26,17 @@ export const metadata: Metadata = {
     "technology solutions",
   ],
   openGraph: {
-    title: "Rewa Apps — Business Messaging & Technology Solutions",
+    title: "Rewa App — Business Messaging & Technology Solutions",
     description:
       "Technology solutions agency specializing in business messaging, WhatsApp Business API, and custom software development.",
     url: "https://rewaapps.com",
-    siteName: "Rewa Apps",
+    siteName: "Rewa App",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rewa Apps — Business Messaging & Technology Solutions",
+    title: "Rewa App — Business Messaging & Technology Solutions",
     description:
       "Technology solutions agency specializing in business messaging, WhatsApp Business API, and custom software development.",
   },

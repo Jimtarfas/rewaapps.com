@@ -24,7 +24,7 @@ export default function Header() {
             </div>
             <div>
               <span className="text-xl font-bold text-secondary">
-                Rewa Apps
+                Rewa App
               </span>
             </div>
           </Link>

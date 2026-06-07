@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "Rewa Apps Privacy Policy — Learn how we collect, use, store, and protect your personal data. Includes information about data deletion rights.",
+    "Rewa App Privacy Policy — Learn how we collect, use, store, and protect your personal data. Includes information about data deletion rights.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -27,12 +27,13 @@ export default function PrivacyPolicyPage() {
           <div className="prose prose-slate max-w-none space-y-8">
             <div>
               <p className="text-muted leading-relaxed">
-                Rewa Apps (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting
+                Rewa App (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting
                 your privacy. This Privacy Policy explains how we collect, use,
                 disclose, and safeguard your information when you visit our
                 website at rewaapps.com, use our services, or interact with our
                 applications that integrate with third-party platforms including
-                the Meta (Facebook/WhatsApp) ecosystem.
+                Meta (WhatsApp Business API), Twilio, and other messaging
+                services.
               </p>
               <p className="text-muted leading-relaxed mt-4">
                 Please read this Privacy Policy carefully. By accessing or using
@@ -56,6 +57,7 @@ export default function PrivacyPolicyPage() {
               </p>
               <ul className="list-disc pl-6 text-muted space-y-1 mt-2">
                 <li>Register for an account or sign up for our services</li>
+                <li>Complete the embedded signup process for WhatsApp Business API</li>
                 <li>Fill out a contact form or request a consultation</li>
                 <li>Subscribe to our newsletter or marketing communications</li>
                 <li>Communicate with us via email, phone, or other channels</li>
@@ -63,8 +65,8 @@ export default function PrivacyPolicyPage() {
               </ul>
               <p className="text-muted leading-relaxed mt-2">
                 This information may include your name, email address, phone
-                number, company name, job title, billing information, and any
-                other information you choose to provide.
+                number, company name, job title, business address, billing
+                information, and any other information you choose to provide.
               </p>
 
               <h3 className="text-lg font-semibold text-secondary mt-4">
@@ -99,7 +101,7 @@ export default function PrivacyPolicyPage() {
               </h3>
               <p className="text-muted leading-relaxed mt-2">
                 When you use our services that integrate with third-party
-                platforms such as Meta (WhatsApp Business API, Facebook), we may
+                platforms such as Meta (WhatsApp Business API) and Twilio, we may
                 receive information from those platforms in accordance with their
                 privacy policies and the permissions you have granted. This may
                 include:
@@ -107,7 +109,10 @@ export default function PrivacyPolicyPage() {
               <ul className="list-disc pl-6 text-muted space-y-1 mt-2">
                 <li>
                   Business account information (business name, phone number,
-                  profile)
+                  profile details)
+                </li>
+                <li>
+                  WhatsApp Business Account (WABA) identifiers and configuration
                 </li>
                 <li>
                   Message metadata (timestamps, delivery status, read receipts)
@@ -129,7 +134,13 @@ export default function PrivacyPolicyPage() {
                 <li>
                   <strong>Service Delivery:</strong> To provide, operate, and
                   maintain our services, including processing API requests,
-                  managing messaging campaigns, and enabling integrations
+                  managing WhatsApp Business accounts, delivering messages, and
+                  enabling integrations
+                </li>
+                <li>
+                  <strong>Onboarding:</strong> To facilitate the embedded signup
+                  process, verify business identity, and provision WhatsApp
+                  senders via Twilio
                 </li>
                 <li>
                   <strong>Communication:</strong> To respond to your inquiries,
@@ -167,14 +178,14 @@ export default function PrivacyPolicyPage() {
               <ul className="list-disc pl-6 text-muted space-y-1 mt-2">
                 <li>
                   <strong>Service Providers:</strong> With trusted third-party
-                  vendors who assist us in operating our services (hosting,
-                  analytics, payment processing), bound by confidentiality
-                  obligations
+                  vendors who assist us in operating our services (including
+                  Twilio for messaging infrastructure, hosting providers, analytics,
+                  and payment processing), bound by confidentiality obligations
                 </li>
                 <li>
                   <strong>Platform Partners:</strong> With platform partners
-                  such as Meta as necessary to deliver our services and comply
-                  with their platform policies
+                  such as Meta as necessary to deliver WhatsApp Business API
+                  services and comply with their platform policies
                 </li>
                 <li>
                   <strong>Legal Requirements:</strong> When required by law,
@@ -379,11 +390,11 @@ export default function PrivacyPolicyPage() {
               </p>
               <div className="mt-4 bg-card rounded-xl p-6 border border-border">
                 <p className="font-semibold text-secondary">
-                  Rewa Apps — Privacy Team
+                  Rewa App — Privacy Team
                 </p>
                 <div className="mt-2 space-y-1 text-sm text-muted">
-                  <p>123 Business Avenue, Suite 100</p>
-                  <p>New York, NY 10001, USA</p>
+                  <p>412 W 7th St</p>
+                  <p>Clovis, NM 88101, USA</p>
                   <p>
                     Email:{" "}
                     <a
@@ -396,10 +407,10 @@ export default function PrivacyPolicyPage() {
                   <p>
                     Phone:{" "}
                     <a
-                      href="tel:+11234567890"
+                      href="tel:+17742787300"
                       className="text-primary hover:text-primary-dark"
                     >
-                      +1 (123) 456-7890
+                      +1 (774) 278-7300
                     </a>
                   </p>
                 </div>

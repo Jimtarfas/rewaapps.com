@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with Rewa Apps. Contact our team for inquiries about WhatsApp Business API, business messaging solutions, or custom development projects.",
+    "Get in touch with Rewa App. Contact our team for inquiries about WhatsApp Business API integration, business messaging solutions, or custom development projects.",
 };
 
 const contactInfo = [
@@ -20,8 +20,8 @@ const contactInfo = [
   },
   {
     title: "Call Us",
-    value: "+1 (123) 456-7890",
-    href: "tel:+11234567890",
+    value: "+1 (774) 278-7300",
+    href: "tel:+17742787300",
     description: "Speak directly with our team during business hours.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -31,9 +31,9 @@ const contactInfo = [
   },
   {
     title: "Visit Us",
-    value: "123 Business Avenue, Suite 100, New York, NY 10001, USA",
+    value: "412 W 7th St, Clovis, NM 88101, USA",
     href: null,
-    description: "Our office is open Monday through Friday, 9 AM to 6 PM EST.",
+    description: "Our office is open Monday through Friday, 9 AM to 6 PM MT.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -55,7 +55,8 @@ export default function ContactPage() {
             </h1>
             <p className="mt-4 text-lg text-slate-300 leading-relaxed">
               Have a question or ready to get started? Reach out to our team
-              and we&apos;ll help you find the right solution for your business.
+              and we&apos;ll help you find the right messaging solution for your
+              business.
             </p>
           </div>
         </div>
@@ -108,11 +109,11 @@ export default function ContactPage() {
                 <div className="mt-3 space-y-2 text-sm text-muted">
                   <div className="flex justify-between">
                     <span>Monday - Friday</span>
-                    <span className="font-medium text-secondary">9:00 AM - 6:00 PM EST</span>
+                    <span className="font-medium text-secondary">9:00 AM - 6:00 PM MT</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Saturday</span>
-                    <span className="font-medium text-secondary">10:00 AM - 2:00 PM EST</span>
+                    <span className="font-medium text-secondary">10:00 AM - 2:00 PM MT</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Sunday</span>
@@ -218,8 +219,8 @@ export default function ContactPage() {
                       className="w-full px-4 py-2.5 rounded-lg border border-border bg-white text-secondary focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
                     >
                       <option value="">Select a service</option>
-                      <option value="whatsapp">WhatsApp Business API</option>
-                      <option value="messaging">Business Messaging</option>
+                      <option value="whatsapp">WhatsApp Business API Integration</option>
+                      <option value="messaging">Messaging Automation</option>
                       <option value="crm">CRM Integration</option>
                       <option value="development">Custom Development</option>
                       <option value="other">Other</option>

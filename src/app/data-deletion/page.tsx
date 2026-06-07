@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Data Deletion",
   description:
-    "Request deletion of your personal data from Rewa Apps. Learn how to submit a data deletion request and what to expect.",
+    "Request deletion of your personal data from Rewa App. Learn how to submit a data deletion request and what to expect.",
 };
 
 export default function DataDeletionPage() {
@@ -32,7 +32,7 @@ export default function DataDeletionPage() {
                 Your Right to Data Deletion
               </h2>
               <p className="mt-4 text-muted leading-relaxed">
-                At Rewa Apps, we respect your right to control your personal
+                At Rewa App, we respect your right to control your personal
                 data. In accordance with applicable data protection laws
                 (including GDPR, CCPA, and other regional regulations), you have
                 the right to request the deletion of your personal information
@@ -40,8 +40,8 @@ export default function DataDeletionPage() {
               </p>
               <p className="mt-3 text-muted leading-relaxed">
                 If you have used any of our services or applications, including
-                those that integrate with Meta platforms (WhatsApp Business API,
-                Facebook), you can request that we delete your personal data by
+                those that integrate with Meta platforms (WhatsApp Business API)
+                or Twilio, you can request that we delete your personal data by
                 following the instructions below.
               </p>
             </div>
@@ -113,11 +113,11 @@ export default function DataDeletionPage() {
                     Send a written request to our office:
                   </p>
                   <p className="mt-3 text-sm text-muted">
-                    Rewa Apps — Privacy Team
+                    Rewa App — Privacy Team
                     <br />
-                    123 Business Avenue, Suite 100
+                    412 W 7th St
                     <br />
-                    New York, NY 10001, USA
+                    Clovis, NM 88101, USA
                   </p>
                 </div>
               </div>
@@ -138,7 +138,7 @@ export default function DataDeletionPage() {
                   "The name of your company or organization (if applicable)",
                   "A description of the specific data you wish to have deleted",
                   "Any account identifiers (e.g., user ID, phone number used with our services)",
-                  "If your request relates to data processed through a Meta platform integration, please specify the platform (WhatsApp, Facebook, etc.)",
+                  "If your request relates to data processed through a Meta platform or Twilio integration, please specify the platform (WhatsApp, Facebook, etc.)",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <svg
@@ -255,7 +255,7 @@ export default function DataDeletionPage() {
                       </li>
                       <li>
                         Data that has been shared with third-party platforms
-                        (e.g., Meta) will be subject to the data deletion
+                        (e.g., Meta, Twilio) will be subject to the data deletion
                         policies of those platforms.
                       </li>
                       <li>
@@ -272,21 +272,21 @@ export default function DataDeletionPage() {
               </div>
             </div>
 
-            {/* For Meta Users */}
+            {/* For Meta/Twilio Users */}
             <div>
               <h2 className="text-2xl font-bold text-secondary">
-                For Users of Meta Platform Integrations
+                For Users of Meta and Twilio Integrations
               </h2>
               <p className="mt-4 text-muted leading-relaxed">
                 If you have interacted with our services through Meta platforms
-                (WhatsApp, Facebook, Instagram), you can also manage your data
-                directly through your Meta account settings. Additionally, you
-                can contact us to request deletion of any data we have collected
-                through these integrations.
+                (WhatsApp Business API) or Twilio, you can also manage your data
+                directly through your respective account settings on those
+                platforms. Additionally, you can contact us to request deletion
+                of any data we have collected through these integrations.
               </p>
               <p className="mt-3 text-muted leading-relaxed">
-                When you request data deletion related to Meta platform
-                integrations, we will:
+                When you request data deletion related to platform integrations,
+                we will:
               </p>
               <ul className="mt-3 list-disc pl-6 text-muted space-y-1">
                 <li>
@@ -298,8 +298,8 @@ export default function DataDeletionPage() {
                   the progress of your deletion request
                 </li>
                 <li>
-                  Notify Meta of the deletion as required by their platform
-                  policies
+                  Notify the relevant platform (Meta, Twilio) of the deletion as
+                  required by their policies
                 </li>
               </ul>
             </div>

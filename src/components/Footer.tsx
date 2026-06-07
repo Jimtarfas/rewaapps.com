@@ -33,24 +33,24 @@ export default function Footer() {
               <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">R</span>
               </div>
-              <span className="text-xl font-bold">Rewa Apps</span>
+              <span className="text-xl font-bold">Rewa App</span>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed mb-4">
-              Technology solutions agency specializing in business messaging,
-              API integrations, and custom software development.
+              Technology solutions provider specializing in business messaging,
+              WhatsApp Business API integration, and custom software development.
             </p>
             {/* Business Contact Info - Required for Meta Verification */}
             <div className="text-sm text-slate-400 space-y-1">
-              <p className="font-semibold text-slate-300">Rewa Apps</p>
-              <p>123 Business Avenue, Suite 100</p>
-              <p>New York, NY 10001, USA</p>
+              <p className="font-semibold text-slate-300">Rewa App</p>
+              <p>412 W 7th St</p>
+              <p>Clovis, NM 88101, USA</p>
               <p>
                 Phone:{" "}
                 <a
-                  href="tel:+11234567890"
+                  href="tel:+17742787300"
                   className="hover:text-white transition-colors"
                 >
-                  +1 (123) 456-7890
+                  +1 (774) 278-7300
                 </a>
               </p>
               <p>
@@ -126,11 +126,11 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-slate-800 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-slate-400">
-            &copy; {currentYear} Rewa Apps. All rights reserved.
+            &copy; {currentYear} Rewa App. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <a
-              href="https://www.facebook.com/rewaapps"
+              href="https://www.facebook.com/rewaapp"
               target="_blank"
               rel="noopener noreferrer"
               className="text-slate-400 hover:text-white transition-colors"
@@ -141,7 +141,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="https://www.linkedin.com/company/rewaapps"
+              href="https://www.linkedin.com/company/rewaapp"
               target="_blank"
               rel="noopener noreferrer"
               className="text-slate-400 hover:text-white transition-colors"
@@ -152,7 +152,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="https://twitter.com/rewaapps"
+              href="https://twitter.com/rewaapp"
               target="_blank"
               rel="noopener noreferrer"
               className="text-slate-400 hover:text-white transition-colors"

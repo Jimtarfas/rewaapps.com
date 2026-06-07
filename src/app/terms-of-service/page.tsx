@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Terms of Service",
   description:
-    "Rewa Apps Terms of Service — Read the terms and conditions that govern your use of our services and platform.",
+    "Rewa App Terms of Service — Read the terms and conditions that govern your use of our services and platform.",
 };
 
 export default function TermsOfServicePage() {
@@ -27,10 +27,10 @@ export default function TermsOfServicePage() {
           <div className="prose prose-slate max-w-none space-y-8">
             <div>
               <p className="text-muted leading-relaxed">
-                Welcome to Rewa Apps. These Terms of Service (&quot;Terms&quot;)
+                Welcome to Rewa App. These Terms of Service (&quot;Terms&quot;)
                 govern your access to and use of the website located at
                 rewaapps.com and all associated services, applications, and
-                platforms provided by Rewa Apps (&quot;we,&quot; &quot;our,&quot; or
+                platforms provided by Rewa App (&quot;we,&quot; &quot;our,&quot; or
                 &quot;us&quot;). By accessing or using our services, you agree to
                 be bound by these Terms. If you do not agree, please do not
                 use our services.
@@ -45,9 +45,9 @@ export default function TermsOfServicePage() {
                 <li>
                   <strong>&quot;Services&quot;</strong> refers to all products,
                   applications, APIs, integrations, and platforms provided by
-                  Rewa Apps, including but not limited to WhatsApp Business API
-                  integration, business messaging solutions, CRM integration, and
-                  custom software development.
+                  Rewa App, including but not limited to WhatsApp Business API
+                  integration via Twilio, business messaging solutions, embedded
+                  signup, CRM integration, and custom software development.
                 </li>
                 <li>
                   <strong>&quot;User,&quot; &quot;you,&quot; or &quot;your&quot;</strong> refers to any
@@ -55,8 +55,8 @@ export default function TermsOfServicePage() {
                 </li>
                 <li>
                   <strong>&quot;Content&quot;</strong> refers to any text, data,
-                  images, files, or other materials uploaded, submitted, or
-                  transmitted through our Services.
+                  images, files, message templates, or other materials uploaded,
+                  submitted, or transmitted through our Services.
                 </li>
               </ul>
             </div>
@@ -107,8 +107,8 @@ export default function TermsOfServicePage() {
                 You may use our Services only for lawful purposes and in
                 accordance with these Terms, all applicable laws and regulations,
                 and the terms and policies of any third-party platforms
-                (including Meta/WhatsApp policies) with which our Services
-                integrate.
+                (including Meta/WhatsApp policies and Twilio&apos;s Acceptable
+                Use Policy) with which our Services integrate.
               </p>
               <h3 className="text-lg font-semibold text-secondary mt-4">
                 4.2 Prohibited Use
@@ -121,7 +121,7 @@ export default function TermsOfServicePage() {
                   Use our Services for any unlawful, harmful, or fraudulent
                   purpose
                 </li>
-                <li>Send spam, unsolicited messages, or bulk messaging that violates applicable regulations</li>
+                <li>Send spam, unsolicited messages, or bulk messaging that violates applicable regulations or platform policies</li>
                 <li>
                   Violate any applicable laws, regulations, or third-party rights
                 </li>
@@ -181,7 +181,7 @@ export default function TermsOfServicePage() {
               <p className="text-muted leading-relaxed mt-2">
                 All intellectual property rights in our Services, including but
                 not limited to software, code, designs, trademarks, and
-                documentation, are owned by or licensed to Rewa Apps. You are
+                documentation, are owned by or licensed to Rewa App. You are
                 granted a limited, non-exclusive, non-transferable license to use
                 our Services in accordance with these Terms. This license does
                 not include any right to modify, distribute, or create derivative
@@ -195,9 +195,10 @@ export default function TermsOfServicePage() {
               </h2>
               <p className="text-muted leading-relaxed mt-2">
                 You retain ownership of any Content you submit through our
-                Services. By submitting Content, you grant us a non-exclusive,
-                worldwide, royalty-free license to use, process, and store such
-                Content solely as necessary to provide our Services to you. You
+                Services, including message templates and business data. By
+                submitting Content, you grant us a non-exclusive, worldwide,
+                royalty-free license to use, process, and store such Content
+                solely as necessary to provide our Services to you. You
                 represent that you have all necessary rights and permissions to
                 submit such Content.
               </p>
@@ -209,11 +210,12 @@ export default function TermsOfServicePage() {
               </h2>
               <p className="text-muted leading-relaxed mt-2">
                 Our Services integrate with third-party platforms, including but
-                not limited to Meta (WhatsApp, Facebook). Your use of these
-                integrations is also subject to the terms and policies of the
-                respective third-party platforms. We are not responsible for the
-                availability, accuracy, or content of third-party services, and
-                we do not endorse any third-party products or services.
+                not limited to Meta (WhatsApp Business API) and Twilio. Your use
+                of these integrations is also subject to the terms and policies
+                of the respective third-party platforms. We are not responsible
+                for the availability, accuracy, or content of third-party
+                services, and we do not endorse any third-party products or
+                services.
               </p>
             </div>
 
@@ -254,7 +256,7 @@ export default function TermsOfServicePage() {
                 11. Limitation of Liability
               </h2>
               <p className="text-muted leading-relaxed mt-2">
-                TO THE MAXIMUM EXTENT PERMITTED BY LAW, REWA APPS SHALL NOT BE
+                TO THE MAXIMUM EXTENT PERMITTED BY LAW, REWA APP SHALL NOT BE
                 LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR
                 PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR REVENUES, WHETHER
                 INCURRED DIRECTLY OR INDIRECTLY, OR ANY LOSS OF DATA, USE, OR
@@ -270,7 +272,7 @@ export default function TermsOfServicePage() {
                 12. Indemnification
               </h2>
               <p className="text-muted leading-relaxed mt-2">
-                You agree to indemnify and hold harmless Rewa Apps, its
+                You agree to indemnify and hold harmless Rewa App, its
                 officers, directors, employees, and agents from any claims,
                 damages, losses, liabilities, and expenses (including reasonable
                 attorneys&apos; fees) arising out of or relating to your use of
@@ -298,10 +300,10 @@ export default function TermsOfServicePage() {
               </h2>
               <p className="text-muted leading-relaxed mt-2">
                 These Terms shall be governed by and construed in accordance with
-                the laws of the State of New York, United States, without regard
-                to its conflict of law provisions. Any disputes arising under
-                these Terms shall be subject to the exclusive jurisdiction of the
-                courts located in New York County, New York.
+                the laws of the State of New Mexico, United States, without
+                regard to its conflict of law provisions. Any disputes arising
+                under these Terms shall be subject to the exclusive jurisdiction
+                of the courts located in Curry County, New Mexico.
               </p>
             </div>
 
@@ -328,11 +330,11 @@ export default function TermsOfServicePage() {
               </p>
               <div className="mt-4 bg-card rounded-xl p-6 border border-border">
                 <p className="font-semibold text-secondary">
-                  Rewa Apps — Legal Department
+                  Rewa App — Legal Department
                 </p>
                 <div className="mt-2 space-y-1 text-sm text-muted">
-                  <p>123 Business Avenue, Suite 100</p>
-                  <p>New York, NY 10001, USA</p>
+                  <p>412 W 7th St</p>
+                  <p>Clovis, NM 88101, USA</p>
                   <p>
                     Email:{" "}
                     <a
@@ -345,10 +347,10 @@ export default function TermsOfServicePage() {
                   <p>
                     Phone:{" "}
                     <a
-                      href="tel:+11234567890"
+                      href="tel:+17742787300"
                       className="text-primary hover:text-primary-dark"
                     >
-                      +1 (123) 456-7890
+                      +1 (774) 278-7300
                     </a>
                   </p>
                 </div>
